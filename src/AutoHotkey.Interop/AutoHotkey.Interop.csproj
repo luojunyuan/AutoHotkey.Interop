@@ -3,7 +3,20 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <OutputType>Library</OutputType>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <Authors>Andrew Smith</Authors>
+    <PackageProjectUrl>https://github.com/Eroge-Helper/Ve.DotNet</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/amazing-andrew/AutoHotkey.Interop</RepositoryUrl>
+    <Description>A wrapper to natively interact and embed autohotkey into your .net program.</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <RepositoryType>Extention</RepositoryType>
+    <PackageTags>ahk, autohotkey</PackageTags>
+    <Version>1.0.0</Version>
+    <PackageId>luojunyuan.autohotkey</PackageId>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\LICENSE" Pack="true" PackagePath="" />
+  </ItemGroup>
   <PropertyGroup>
     <StartupObject />
   </PropertyGroup>
