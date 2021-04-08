@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 
 namespace AutoHotkey.Interop.Util
 {
-    internal static class EmbededResourceHelper
+    public static class EmbededResourceHelper
     {
         public static string FindByName(Assembly assembly, string path) {
             path = Regex.Replace(path, @"[/\\]", "."); //replace slashes with periods
             string path_with_dot_prefix = path.StartsWith(".") ? path : "." + path;
-            
+
             var names = assembly.GetManifestResourceNames();
 
             foreach (var name in names) {
